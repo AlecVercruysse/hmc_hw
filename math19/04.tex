@@ -1,0 +1,103 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem} % enumerate
+% example usage of amssymb: $\mathbb{Z}$
+% amsmath is loaded.
+
+% info for header block in upper right hand corner
+\name{}
+\class{Math 19 - 07}
+\assignment{Homework \#4}
+\duedate{9/27/2019}
+
+\begin{document}
+
+\problemlist{Homework \#4}
+
+\begin{problem}[1]
+  Use the definition of derivative to determine if the following functions are differentiable at
+$x = 0$. If not, why not? If so, what is $f'(0)$?
+\begin{enumerate}[label=(\alph*)]
+\item \[ f(x) =
+    \begin{cases}
+      x^2 &x \leq 0 \\
+      x   &x > 0
+    \end{cases}
+  \]
+\item \[ f(x) =
+    \begin{cases}
+    0 &x \leq 0 \\
+    x^2 &x > 0
+    \end{cases}
+    \]
+\end{enumerate}
+\end{problem}
+\begin{solution}
+
+\end{solution}
+\pagebreak
+\begin{problem}[2]
+  Suppose $f$ is differentiable at $x_0$ and let $c\in\mathbb{R}$ be a constant. Use the definition of derivative to prove that the function $(cf)$ is differentiable at $x_0$ and
+  \[ (cf)' (x_0) = cf'(x_0). \]
+  Note: The function $(cf)$ is defined by $(cf)(x) = cf(x)$.
+\end{problem}
+\begin{solution}
+
+\end{solution}
+\pagebreak
+\begin{problem}[3]
+  Let $f$, $g$, and $h$ be differentiable functions. Use the product rule to show
+  \[ (fgh)' = f'gh = fg'h + fgh'. \]
+  what about a product of $n$ functions $f_1f_2\dots f_n$? Prove your claim.
+\end{problem}
+\begin{solution}
+  
+\end{solution}
+\pagebreak
+\begin{problem}[4]
+  Use the rules of differentiation to calculate $f'$ for each of the following functions $f$ (don’t worry about the domain of $f$ or $f'$; just obtain a formula for $f'$ that is valid when it makes sense).
+  \begin{enumerate}[label=(\alph*)]
+  \item $\displaystyle f(x) = \frac{\sin(\cos x)}{x}$
+  \item $\displaystyle f(x) = \left(x + \sin^5 x\right)^6$
+  \item $\displaystyle f(x) = \sin\left( \frac{x}{x - \sin\left( \frac{x}{x-\sin x}\right)} \right)$
+  \end{enumerate}
+\end{problem}
+\begin{solution}
+\end{solution}
+\pagebreak
+\begin{problem}[5]
+  If $f$ is differentiable at a then the graph of $f$ has a well-defined tangent line at $(a,f(a))$ defined by
+  \[ \ell(x) = f(a) + f'(a)(x-a).\]
+  For $x$ near $a$ we can use the tangent line to approximate the value $f(x)$:
+  \begin{align*}
+    f(x) &\approx \ell(x) \\
+         &= f(a) + f'(a)(x-a).\\
+  \end{align*}
+  The error in this approximation is the difference between $\ell(x)$ and the actual value $f(x)$:
+  \begin{align*}
+    e(x) &= f(x) - \ell(x) \\
+         &= f(x) - (f(a) + f'(a)(x-a)).
+  \end{align*}
+  Note that $e(a) = 0$ since the tangent line agrees with $f$ at $a$.
+  \begin{enumerate}[label=(\alph*)]
+  \item Prove that if $f$ is differentiable at $a$ then the error $e(x)$ satisfies
+    \begin{equation} \label{eq:1}
+      \lim_{x\to a} \frac{e(x)}{x - a} = 0
+    \end{equation}
+  \item Suppose $f$ is not necessarily differentiable at $a$, but has the property
+    \begin{equation} \label{eq:2}
+      f(x) = f(a) + M(x - a) + e(x)
+    \end{equation}
+    for some constant $M$ and some function $e(x)$ that satisfies the limit (\ref{eq:1}).
+    Prove that $f$ must be differentiable at $a$ and $f'(a) = M$.
+    Hint: According to (\ref{eq:2}) what form must $\frac{f(x) - f(a)}{x - a}$ have? Now take limits.
+  \end{enumerate}
+\end{problem}
+\begin{solution}
+
+\end{solution}
+\pagebreak
+\quad
+\newpage
+\end{document}
